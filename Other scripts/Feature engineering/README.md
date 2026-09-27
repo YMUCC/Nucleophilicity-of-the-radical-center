@@ -7,3 +7,5 @@
 #`Volume.py`:Extract embedded volume.
 
 #`disp.py`:Extraction of molecular dispersion.
+
+#`Descriptor filtering.ipynb`：This script is used to filter descriptors.
