@@ -20,3 +20,7 @@ This folder contains all the models required for training.
 #`SVR.py`:Support Vector Regression Model
 
 #`XGB.py`:eXtreme Gradient Boosting Model
+
+#`External validation.py`:External validation script that performs external validation by loading the corresponding model.
+
+#`Algorithm11Predictions-RP.py Algorithm11Results-RP.py`:These two scripts read the model training results and the specific results for each data item.
