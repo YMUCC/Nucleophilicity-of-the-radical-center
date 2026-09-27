@@ -9,4 +9,4 @@ This folder contains the dataset required for model training.
 
 #`Group.xlsx`:Dividing the training data into different groups based on skeletons produces the necessary input file for GroupSplit.py.
 
-#`"Spin Contamination.xlsx"`:All data represent the expectation values ​​of the squared spin operator(S^2) after spin contamination annihilation in Gaussian calculations.
+#`Spin Contamination.xlsx`:All data represent the expectation values ​​of the squared spin operator(S^2) after spin contamination annihilation in Gaussian calculations.
