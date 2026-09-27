@@ -24,3 +24,7 @@ This folder contains all the models required for training.
 #`External validation.py`:External validation script that performs external validation by loading the corresponding model.
 
 #`Algorithm11Predictions-RP.py Algorithm11Results-RP.py`:These two scripts read the model training results and the specific results for each data item.
+
+#`GroupSplit.py`:Model training script based on the Random Forest model, using group-based data partitioning.
+
+#`LeaveOne.py`:Model training script using the leave-one-out data splitting method based on the Random Forest model.
