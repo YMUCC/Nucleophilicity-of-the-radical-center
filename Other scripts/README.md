@@ -5,4 +5,4 @@ You can view various types of scripts via the subdirectories.
 
 #`Plotting script`:This folder contains all the scripts for the visual analysis of data.
 
-#`Visualization of Model Training Results.ipynb`:This script is used to visualize the results of the trained model.
+
