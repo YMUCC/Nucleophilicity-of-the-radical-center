@@ -7,3 +7,5 @@
 #`Visualization of Model Training Results.ipynb`:This script is used to visualize the results of the trained model.
 
 #`PDP1.py PDP2.py`:These two scripts are for performing 1D and 2D PDP analysis.
+
+#`UMAP.ipynb`:This script is used to perform UMAP dimensionality reduction analysis on the data.
