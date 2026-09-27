@@ -54,7 +54,7 @@ random_state=42
 #x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.2,shuffle=True,random_state=random_state)
 x_train, x_test, y_train, y_test, name_train, name_test, indice_train, indice_test = train_test_split(x, y, name, indice, test_size=0.1, random_state=42)
 
-# 定义每个算法
+
 # building and evaluating final model using best params
 def DT(x_train, y_train, x_test):
     model = joblib.load('/home/dong/RadicalPolarity/Training/Final_Training/Standardized/DT/def2QZVP/NBO/dt_model.pkl')
@@ -176,7 +176,7 @@ def SR(x_train, y_train, x_test):
     y1_predE = y1_pred - y1
     return y_train_pred, y_test_pred, y_trainE, y_testE, y1_pred, y1_predE
 
-# 调用每个算法，将训练和测试预测结果添加到列表中
+
 train_preds = []
 test_preds = []
 train_errors = []
@@ -272,7 +272,7 @@ test_errors.append(sr_test_errors)
 pred_y1.append(sr_pred_y1)
 pred_errors.append(sr_pred_errors)
 
-# 将预测结果保存到CSV文件中
+
 df_train = pd.DataFrame(train_preds).T
 df_train.columns = ["dt_train", "gpr_train", "knn_train", "krr_train", "lasso_train", "lgbm_train", "nn_train", "rf_train", "svr_train", "xgb_train", "sr_train"]
 df_train["name_train"] = name_train.tolist()
