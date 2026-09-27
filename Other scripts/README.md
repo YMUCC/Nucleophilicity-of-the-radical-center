@@ -2,3 +2,5 @@
 You can view various types of scripts via the subdirectories.
 
 #`Feature engineering`：This folder contains all the scripts for extracting descriptors.
+
+#`Plotting script`:This folder contains all the scripts for the visual analysis of data.
