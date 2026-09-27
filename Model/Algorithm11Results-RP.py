@@ -56,7 +56,7 @@ random_state=42
 x_train,x_test,y_train,y_test = train_test_split(x,y,test_size=0.1,shuffle=True,random_state=random_state)
 #x_train, x_test, y_train, y_test, sample_names_train, sample_names_test = train_test_split(x, y, sample_name, test_size=0.2, random_state=42)
 
-# 定义一个列表 包含11种算法的名称和对应的模型对象
+
 # building and evaluating final model using best params
 
 dt = joblib.load('/home/dong/RadicalPolarity/Training/Final_Training/Standardized/DT/def2QZVP/NBO/dt_model.pkl')
@@ -73,10 +73,10 @@ sr = joblib.load('/home/dong/RadicalPolarity/Training/Final_Training/Standardize
 
 models = [('DT', dt), ('GPR', gpr), ('KNN', knn), ('KRR', krr), ('Lasso', lasso), ('LGBM', lgbm), ('NN', nn), ('RF', rf), ('SVR', svr), ('XGB', xgboost), ('SR', sr)]
 
-#创建一个空的DataFrame来保存结果
+
 results = pd.DataFrame(columns=['Algorithm', 'MAE_train', 'MAE_test', 'RMSE_train', 'RMSE_test', 'R2_train', 'R2_test', 'MAE_pred', 'RMSE_pred', 'R2_pred'])
 
-#循环运行每个算法，并将MAE和R2值添加到结果DataFrame中
+
 for name, model in models:
     #model.fit(x_train,y_train)
     y_train_pred = model.predict(x_train)
@@ -94,7 +94,7 @@ for name, model in models:
     results = results._append({'Algorithm': name, 'MAE_train': train_mae, 'MAE_test': test_mae, 'RMSE_train': train_rmse, 'RMSE_test': test_rmse,
                 'R2_train': train_r2, 'R2_test': test_r2, 'MAE_pred': pred_mae, 'RMSE_pred': pred_rmse, 'R2_pred': pred_r2,}, ignore_index=True)
 
-#将结果DataFrame保存到CSV文件中
+
 results.to_csv('Evaluate_ResultsRP.csv', index=False)
 
 t2 = time()
