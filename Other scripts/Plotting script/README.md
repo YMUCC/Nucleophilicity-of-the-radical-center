@@ -9,3 +9,5 @@
 #`PDP1.py PDP2.py`:These two scripts are for performing 1D and 2D PDP analysis.
 
 #`UMAP.ipynb`:This script is used to perform UMAP dimensionality reduction analysis on the data.
+
+#`Scatter plot.ipynb`:This script is used to plot a scatter plot of the model training results.
